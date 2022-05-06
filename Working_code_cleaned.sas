@@ -55,7 +55,6 @@ run; /*adding the variables to the data*/
 
 data nhanes;
 set total;
-/*This is the area where you can create and recode variables for your study*/
 
 /*4-year sampe weights for 2003-2006, variable MEC6YR; adjust for more/fewer survey years*/
 if sddsrvyr in (4,5,6) then MEC6YR = 1/2 * WTMEC2YR;
